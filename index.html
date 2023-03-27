@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+   body{
+    
+    display: flex;
+    justify-content: center;
+}
+section{
+    border: 3px solid black;
+    background-color:rgb(55, 91, 105);
+}
+button{
+   width: 3rem;
+    background-color: black;
+    font-size:1.2rem;
+    border-radius:1rem;
+    color: white;
+}
+button:hover{
+    background-color: black;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+input{
+    width:23rem;
+    padding:1rem;
+    margin:1rem;
+    border:5px solid black;
+    border-radius: 1rem;
+    height:2rem;
+   background-color: rgb(95, 245, 95);
+   font-size: 20px;
+}
+article{
+    margin:1rem;
+    border: 3px solid;
+    padding:1rem;
+    background-color: rgb(246, 239, 239);
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    width: 400px;
+    height: 400px;
+}
+h2{
+    font-size:3rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+  <main>
+    <section>
+     <nav><input id="inp" type="text"></nav>
+         <article>
+         <button onclick="touch(7)">7</button>
+         <button onclick="touch(8)">8</button>
+         <button onclick="touch(9)">9</button>
+         <button onclick="touch('/')">/</button>
+         <button onclick="on()" >ON</button>
+         <button onclick="touch(4)">4</button>
+         <button onclick="touch(5)">5</button>
+         <button onclick="touch(6)">6</button>
+         <button onclick="touch('*')">X</button>
+         <button onclick="touch('%')">%</button>
+         <button onclick="touch(1)">1</button>
+         <button onclick="touch(2)">2</button>
+         <button onclick="touch(3)">3</button>
+         <button onclick="touch('+')">+</button>
+         <button onclick="touch('-')">-</button>
+         <button onclick="touch(0)">0</button>
+         <button onclick="touch(00)">00</button>
+         <button onclick="touch('.')">.</button>
+         <button onclick="equal()">=</button>
+         <button onclick="off()">Off</button>
+     </article>
+ </section>
+ </main>
+</body>
+<script src="./calculator.js"></script>
+</html>
